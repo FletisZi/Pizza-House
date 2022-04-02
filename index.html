@@ -1,32 +1,76 @@
-<!DOCTYPE HTML5>
-<html lang="pt_br">
+<!DOCTYPE html5>
+<html lang="pt_BR">
     <head>
-        <title>Home</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="estilos.css">
-
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Pizza House</title>
+        <link rel="icon" href="LOGO.png" type="image/x-icon" />
+    
     </head>
+    
     <body>
-        <header>
-            <nav>
-                <a href="#">PIZZA HOUSE</a>
-                <div>...</div>
+        
+        <header id="header">
+
+            <nav class="container">
+                <a class="logo" >Pizza<span>House</span>.</a>
+                <div style="font-size: 38px;"><b>...</b></div>
+
             </nav>
         </header>
-
+        
         <main>
-            <section>
-                <h1>A pizza house</h1>
-                <img src="https://scontent.fbat1-1.fna.fbcdn.net/v/t1.6435-9/139711907_4916144828460022_1060902063943343065_n.png?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=dnk8eq8ZECgAX9rhXvU&_nc_ht=scontent.fbat1-1.fna&oh=00_AT9CqkCOzsp1z1hgU9bFnoOElUDGzCJuRJfArkcYTG3o9A&oe=62208023"/>
+            <section class="section" id="home">
+                <div class="container grid" >
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Imagem 1" onmouseout="sair()" onmouseenter="entrar()">
+                    </div>
+                    <div class="text">
+                        <div>
+                            <h1>PIZZA NATURAL E DELICIOSA!</h1>
+                            <p>Pessoas felizes, com um pouco de pizza tudo fica sempre melhor e saude felizes, então bora de pizza house.</p>
+
+                        </div>
+                        <div class="button">
+                            <a  href="file:///C:/Users/Rodrigo/Desktop/pagina%202.0/cadastro.html"><b>FAZER PEDIDO</b></a>
+                        </div>
+                    </div>
+
+                </div>
             </section>
-            <section>
-                <h1>Promoção</h1>
-                
+
+            <section class="section">
+                <div class="container">
+                    outra seção
+                </div>
+
             </section>
         </main>
 
         <footer>
 
-        </footer>
-    </body>
+       </footer>    
+       
+       
+
+       <script>
+        function entrar(){
+            var a = document.getElementsByTagName('img')[0];
+            a.style.width = 'auto';
+            a.style.height = '18rem';
+            a.style.border = '2px solid black';
+        }
+
+        function sair(){
+            var a = document.getElementsByTagName('img')[0];
+            a.style.width = 'auto';
+            a.style.height = '16rem';
+        }
+        </script>
+
+        </body>
 </html>

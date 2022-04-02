@@ -1,0 +1,126 @@
+/*============= reset ====================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: auto;
+    height: 16rem;
+    border-radius: 6px;
+    border: black solid 2px;
+}
+a{
+    text-decoration: none;
+}
+
+/*============= VARIABLES ====================*/
+:root{
+    --hue: 159;
+    --base-color: hsl(var(--hue)36% 57%);
+    --base-color-second: hsl(var(--hue)65% 88%);
+    --base-color-alt: hsl(var(--hue) 57% 53%);
+    --title-color: hsl(var(--hue)41% 10%);
+    --text-color: hsl(0 0% 46%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+
+    font-size: 100%;
+}
+
+/*============= BASE ====================*/
+
+body{
+    font: 400 1rem 'DM Sans';
+    color: rgb(249, 243, 233);
+    background: var(--body-color);
+    -webkit-font-smoothing: antialiased;
+}
+
+h1{
+    font: 700 1.975rem 'Poppins';
+    color: rgb(251, 203, 45);
+    -webkit-font-smoothing: auto;
+}
+
+.button{
+
+    color: var(--color);
+}
+
+/*============= lAYOUT ====================*/
+#header{
+    border-bottom: 3px solid rgb(151, 107, 77);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgb(57, 7, 6);
+    width: 100%;
+    
+}
+
+nav{
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font: 700 1.31rem 'Poppins';
+    color: rgb(255, 255, 255);
+}
+
+.logo span{
+    color: rgba(218, 46, 59);
+}
+
+.container{
+    margin: 0 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section{
+    padding: 7rem 0;
+}
+
+
+/*============= HOME ====================*/
+
+#Home .container{
+    text-align: center;
+}
+a{
+    color: black;
+    padding: 10px;
+}
+.button{
+    margin: 2rem auto;
+    width: 10rem;
+    height: 2.5rem;
+    color: var(--text-colo);
+    background: var(--base-color);/*rgba(189, 63, 63, 0.822);*/
+    text-align: center;
+    align-items: center;
+    line-height: 2.5rem;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+body{
+    background-image: linear-gradient(to top, rgb(101, 20, 3), rgb(57, 7, 6)) ;
+
+} 
+
+
+
+
+/*============= CADASTRO ====================*/
+
